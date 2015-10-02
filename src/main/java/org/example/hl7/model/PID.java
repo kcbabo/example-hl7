@@ -6,6 +6,7 @@ public class PID {
 	private Object delegate;
 	private CX_ID internalId;
 	private XPN patientName;
+	private XAD address;
 	
 	PID(ca.uhn.hl7v2.model.v23.segment.PID delegate) {
 		this.delegate = delegate;
@@ -28,6 +29,14 @@ public class PID {
 			return new XPN(getDelegate().insertPatientName(0));
 		} else {
 			return new XPN(getDelegate().getPatientName()[0]);
+		}
+	}
+	
+	public XAD getAddress() throws Exception {
+		if (getDelegate().getPatientAddressReps() == 0) {
+			return new XAD(getDelegate().insertPatientAddress(0));
+		} else {
+			return new XAD(getDelegate().getPatientAddress()[0]);
 		}
 	}
 }

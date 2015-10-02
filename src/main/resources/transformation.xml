@@ -78,5 +78,53 @@
             <a>PID.patientName.middleNameInitial</a>
             <b>PID.patientName.middleNameInitial</b>
         </field>
+        <field>
+            <a>INSURANCE</a>
+            <b>INSURANCE</b>
+        </field>
+    </mapping>
+    <mapping>
+        <class-a>org.example.hl7.model.INSURANCE</class-a>
+        <class-b>org.example.hl7.model.INSURANCE</class-b>
+        <field>
+            <a>insuranceInfo.companyAddress.city</a>
+            <b>insuranceInfo.companyAddress.city</b>
+        </field>
+        <field>
+            <a>insuranceInfo.companyAddress.state</a>
+            <b>insuranceInfo.companyAddress.state</b>
+        </field>
+        <field>
+            <a>insuranceInfo.companyAddress.streetAddress</a>
+            <b>insuranceInfo.companyAddress.streetAddress</b>
+        </field>
+        <field>
+            <a>insuranceInfo.companyAddress.zip</a>
+            <b>insuranceInfo.companyAddress.zip</b>
+        </field>
+        <field>
+            <a>additionalInsuranceInfo.employerName</a>
+            <b>additionalInsuranceInfo.employerName</b>
+        </field>
+        <field>
+            <a>additionalInsuranceInfo.insuranceIdNum</a>
+            <b>additionalInsuranceInfo.insuranceIdNum</b>
+        </field>
+        <field>
+            <a>additionalInsuranceInfo.socialSecurityNum</a>
+            <b>additionalInsuranceInfo.socialSecurityNum</b>
+        </field>
+        <field>
+            <a>insuranceInfo.companyId</a>
+            <b>insuranceInfo.companyId</b>
+        </field>
+        <field>
+            <a>insuranceInfo.companyName</a>
+            <b>insuranceInfo.companyName</b>
+        </field>
+        <field>
+            <a>insuranceInfo.planId</a>
+            <b>insuranceInfo.planId</b>
+        </field>
     </mapping>
 </mappings>

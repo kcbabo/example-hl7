@@ -10,14 +10,14 @@
 
    <!-- Camel route -->
    <camelContext xmlns="http://camel.apache.org/schema/spring">
-	<endpoint uri="dozer:hl7tohl7?unmarshalId=customHL7&amp;marshalId=customHL7&amp;sourceModel=org.example.hl7.model.ADT_A01&amp;targetModel=org.example.hl7.model.ADT_A01&amp;mappingFile=transformation.xml" id="hl7tohl7"/>
-    <dataFormats>
-      <custom ref="CustomHL7DataFormat" id="customHL7"/>
-    </dataFormats>
-    <route>
-      <from uri="file:src/data?fileName=ADT-A01.hl7&amp;noop=true"/>
-      <to ref="hl7tohl7"/>
-      <log message="\n===\n${body}\n===="/>
-    </route>
-  </camelContext>
+  <endpoint uri="dozer:hl7tohl7?unmarshalId=customHL7&amp;marshalId=customHL7&amp;sourceModel=org.example.hl7.model.ADT_A01&amp;targetModel=org.example.hl7.model.ADT_A01&amp;mappingFile=transformation.xml" id="hl7tohl7"/>
+  <dataFormats>
+    <custom ref="CustomHL7DataFormat" id="customHL7"/>
+  </dataFormats>
+  <route>
+    <from uri="file:src/data?fileName=ADT-A01.hl7&amp;noop=true"/>
+    <to ref="hl7tohl7"/>
+    <log message="\n===\n${body}\n===="/>
+  </route>
+</camelContext>
 </beans>
