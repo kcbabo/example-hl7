@@ -66,6 +66,9 @@
         <filtering>true</filtering>
         <directory>src/main/resources</directory>
       </resource>
+      <resource>
+        <directory>/opt/demo/hl7-example/.functions</directory>
+      </resource>
     </resources>
     <plugins>
       <plugin>
